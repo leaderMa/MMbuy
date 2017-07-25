@@ -1,0 +1,198 @@
+/*全局*/
+.layout{
+    width: 100%;
+    margin: 0 auto;
+    min-width: 320px;
+    background-color: #ccc;
+    /*height: 1000px;*/
+}
+/*头部*/
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: #FF841D;
+    /*padding: 10px;*/
+}
+.logo{
+    width: 180px;
+    height: 30px;
+    background: url("../images/header_logo.png") no-repeat;    
+    background-size: 180px 30px;
+    margin: 10px 0 0 10px;
+}
+.download{
+    width: 35px;
+    height: 35px;
+    background: url("../images/header_app.png") no-repeat;
+    background-size: 35px 35px;
+    margin: 10px 10px 0 0;
+}
+/*搜索*/
+.search{
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+    background-color: #fff;
+}
+.searchTxt{
+    width: 100%;
+    padding-right: 110px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+.searchTxt input{
+    width: 100%;
+    height: 30px;
+    border-radius: 50px;
+    outline:none;
+    border: 1px solid #ccc;
+    background-color: #F5F5F5;
+    padding-left: 15px;
+}
+.searchBtn{
+    width: 60px;
+    height: 30px;
+    background-color: #FF841D;
+    margin-top: -32px;
+    margin-right: 15px;
+    border-radius: 50px;
+    outline:none;
+    border: none;
+    color: #fff;
+}
+/*主体*/
+.main{
+    width: 100%;
+    margin-top: 10px;
+    background-color: #fff;
+}
+.content{
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.content li{
+    float: left;
+    width: 25%;
+    height: 80px;
+    padding-top: 10px;
+}
+.content li:nth-last-child(-n+4){
+    display: none;
+}
+.contentA img{
+    width: 50px;
+    height: 50px;
+}
+.mainHeader{
+    width: 100%;
+    height:30px;
+    background-color: #FF841D;
+    color: #fff;
+}
+.mainHeader h5{
+    margin-left: 10px;
+    line-height: 30px;
+}
+.mainHeader a{
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url("../images/header_app.png") no-repeat;
+    background-size: 22px 22px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.information{
+    width: 100%;
+    height: 40px;
+    padding:10px;
+    text-align: center;
+    /*background-color: #fff;*/
+    box-sizing: border-box;
+}
+.information a{
+    display: block;
+    width: 100%;
+    height: 20px;
+    border:1px solid #ccc;
+}
+.commodity {
+    width: 100%;
+    overflow: hidden;
+    padding:10px;
+    box-sizing: border-box;
+
+}
+.commodity li{
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+
+}
+.commodityLeft img{
+    width: 100px;
+    height: 100px;
+}
+.commodityRight{
+    /*width: 100%;*/
+    margin-left: 100px;
+    padding-left: 10px;
+
+}
+.commodityRight h5{
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.commodityRight p{
+    margin-top:10px;
+    color: red;
+}
+.commodityRight .spanl{
+    margin-top: 10px;
+    display: block;
+}
+.commodityRight .spanr{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.commodityRight .spanr span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url("../images/comment.svg") no-repeat;
+    background-size: 20px 20px;
+    margin-right: 10px;
+}
+
+/*底部*/
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    text-align: center;
+}
+.footerH{
+    padding-top: 10px;
+}
+.footerH li{
+    width: 33.3%;
+    height: 25px;
+    border:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    float: left;
+    border-right: 0;
+    box-sizing: border-box;
+}
+.footerH li:nth-of-type(1){
+    border-left: 0;
+}
+.footer p:nth-of-type(1){
+    margin-top: 30px;
+}
+.footer p a:nth-of-type(1){
+    color: red;
+}

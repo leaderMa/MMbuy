@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/category.js"></script>
+</head>
+<body>
+<div class="layout">
+    <!--头部-->
+    <div class="header ">
+        <div class="logo fl">
+            <a href="index.html"></a>
+        </div>
+        <div class="download fr">
+            <a href="#"></a>
+        </div>
+    </div>
+    <!--搜索-->
+    <div class="search">
+        <div class="searchTxt fl">
+            <input type="text" placeholder="请输入商品">
+        </div>
+        <input type="button" class="searchBtn fr" value="搜索">
+    </div>
+    <!--主体-->
+    <div class="main clearfix">
+        <div class="nav">
+            <!--<div class="navH">-->
+            <!--<h5 class="fl">大家电</h5>-->
+            <!--<span class="fr"></span>-->
+            <!--</div>-->
+            <!--<ul class="navC">-->
+            <!--<li>-->
+            <!--<a href="#">电视</a>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<a href="#">电视</a>-->
+            <!--</li>-->
+            <!--</ul>-->
+
+        </div>
+    </div>
+    <!--底部-->
+    <div class="footer ">
+        <ul class="footerH">
+            <li>
+                <a href="#">登录</a>
+            </li>
+            <li>
+                <a href="#">注册</a>
+            </li>
+            <li>
+                <a href="#">返回顶部</a>
+            </li>
+        </ul>
+        <p>
+            <a href="">手机APP下载</a> <a href="">慢慢买手机版</a> -- 掌上比价平台
+        </p>
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</div>
+</div>
+</body>
+<script type="text/html" id="navH">
+    {{each result as value i}}
+    <!--<div calss="navTxt">-->
+    <div class="navH ">
+        <h5 class="fl" data-titleId="{{value.titleId}}">{{value.title}}</h5>
+        <span class="fr"></span>
+    </div>
+    <div class="hide "></div>
+    <!--</div>-->
+    {{/each}}
+</script>
+<script type="text/html" id="navC">
+    <ul class="navC clearfix">
+        {{each result as value}}
+        <li class="clearfix">
+            <a href="productlist.html?categoryid={{value.categoryId}}&category={{value.category}}">{{value.category}}</a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+
+</html>

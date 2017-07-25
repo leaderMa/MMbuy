@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/moneyctrl.css">
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/moneyctrl.js"></script>
+
+</head>
+<body>
+<div class="layout clearfix">
+    <!--头部-->
+    <div class="header ">
+        <a href="index.html"><</a>
+        <h2>省钱控</h2>
+    </div>
+    <!--主体-->
+    <div class="main clearfix">
+        <div class="commodity ">
+            <!--<ul>-->
+            <!--<li>-->
+            <!--<div class="commodityLeft fl" ><img src="images/201610001412282758.jpg" alt=""></div>-->
+            <!--<div class="commodityRight ">-->
+            <!--<h5>移动端凑单品：海天 鲜味 生抽 1.28L</h5>-->
+            <!--<p>10.9元</p>-->
+            <!--<span class="spanl fl">京东商城 | 10-25 14:10</span>-->
+            <!--<span class="spanr fr">-->
+            <!--<span></span>1-->
+            <!--</span>-->
+            <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<div class="commodityLeft fl" ><img src="images/201610001412282758.jpg" alt=""></div>-->
+            <!--<div class="commodityRight ">-->
+            <!--<h5>移动端凑单品：海天 鲜味 生抽 1.28L</h5>-->
+            <!--<p>10.9元</p>-->
+            <!--<span class="spanl fl">京东商城 | 10-25 14:10</span>-->
+            <!--<span class="spanr fr">-->
+            <!--<span></span>1-->
+            <!--</span>-->
+            <!--</div>-->
+            <!--</li>-->
+            <!--</ul>-->
+        </div>
+        <div class="productFooter">
+            <a href="javascript:;" class="fl page-prev">上一页</a>
+            <a href="javascript:;" class="fr page-next">下一页</a>
+            <div class="centent">
+                <a id="dLabel" href="javascript:;">第几页</a>
+                <ul class="clearfix">
+                    <!--<li><a href="">第1/14页</a></li>-->
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--底部-->
+    <div class="footer ">
+        <ul class="footerH">
+            <li>
+                <a href="#">登录</a>
+            </li>
+            <li>
+                <a href="#">注册</a>
+            </li>
+            <li>
+                <a href="#">返回顶部</a>
+            </li>
+        </ul>
+        <p>
+            <a href="">手机APP下载</a> <a href="">慢慢买手机版</a> -- 掌上比价平台
+        </p>
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</div>
+</body>
+
+<script type="text/html" id="commodity">
+    <ul>
+        {{each result as value }}
+        <li>
+            <div class="commodityLeft fl">
+                {{#value.productImgSm}}
+            </div>
+            <div class="commodityRight ">
+                <h5>{{value.productName}}</h5>
+                <p>{{value.productPinkage}}</p>
+                <span class="spanl fl">{{value.productFrom}}|{{value.productTime}}</span>
+                        <span class="spanr fr">
+                            <span></span>
+                            {{value.productComCount.replace("有","").replace('人评论',"")||0}}
+                        </span>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+</html>

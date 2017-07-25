@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="css/gsproduct.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+    <div class="layout clearfix">
+        <!--头部-->
+        <div class="header">
+            <a href="index.html" class=""><</a>
+            <h2>凑单品</h2>
+            <a href="#" class=""></a>
+        </div>
+        <!--主体-->
+        <div class="main clearfix">
+            <!--导航区-->
+            <div class="nav">
+                <div class="navHeader">
+                    <ul>
+                        <li class="navHeader1">
+                            <select name="" >
+                                <option value="">京东</option>
+                                <option value="">京东</option>
+                                <option value="">京东</option>
+                            </select>
+                        </li>
+                        <li class="navHeader2">
+                            <select name="" >
+                                <option value="">京东</option>
+                                <option value="">京东</option>
+                                <option value="">京东</option>
+                            </select>
+                        </li>
+                        <li class="navHeader3">
+                            <select name="" >
+                                <option value="">全部价格</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <a href="#" class="icon"></a>
+                </div>
+            </div>
+            <!--产品区-->
+            <div class="product">
+                <ul class="productInfo">
+                    <li>
+                        <div class="productInfoH">
+                            <img src="images/5461b6e1N70e46439.jpg" alt="">
+                        </div>
+                        <p class="productInfoM">廿一客(21cake)专用餐具 1人份(不单独配送)</p>
+                        <div class="productInfoB clearfix">
+                            <span >¥0.50</span>
+                            <a href="#">去凑单</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--底部-->
+        <div class="footer">
+            <ul class="clearfix">
+                <li>登录</li>
+                <li>注册</li>
+                <li>返回顶部</li>
+            </ul>
+            <p><a href="#">手机APP下载 </a>慢慢买手机版—掌上比价平台</p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</body>
+<script src="lib/jquery/jquery.js"></script>
+<script src="js/flexible.js"></script>
+<script src="js/template.js"></script>
+<script src="js/gsproduct.js"></script>
+<script type="text/html" id="navHeader1">
+    <select name="" >
+    {{each result as value}}
+        <option value="{{value.shopId}}">{{value.shopName}}</option>
+    {{/each}}
+    </select>
+</script>
+<script type="text/html" id="navHeader2">
+    <select name="" >
+        {{each result as value}}
+        <option value="{{value.areaId}}">{{value.areaName}}</option>
+        {{/each}}
+    </select>
+</script>
+<script type="text/html" id="productInfoC">
+    {{each result as value}}
+    <li>
+        <div class="productInfoH">
+            <img src="{{value.productImg}}" alt="">
+        </div>
+        <p class="productInfoM">{{value.productName}}</p>
+        <div class="productInfoB clearfix">
+            <span class="fl">{{value.productPrice}}</span>
+            <a href="#" class="fr">去凑单</a>
+        </div>
+    </li>
+    {{/each}}
+</script>
+</html>

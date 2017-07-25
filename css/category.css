@@ -1,0 +1,148 @@
+/*全局*/
+.layout{
+    width: 100%;
+    margin: 0 auto;
+    min-width: 320px;
+    /*background-color: pink;*/
+    /*height: 1000px;*/
+}
+/*头部*/
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: #FF841D;
+    /*padding: 10px;*/
+}
+.logo{
+    width: 180px;
+    height: 30px;
+    background: url("../images/header_logo.png") no-repeat;
+    background-size: 180px 30px;
+    margin: 10px 0 0 10px;
+}
+.download{
+    width: 35px;
+    height: 35px;
+    background: url("../images/header_app.png") no-repeat;
+    background-size: 35px 35px;
+    margin: 10px 10px 0 0;
+}
+/*搜索*/
+.search{
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+    background-color: #fff;
+}
+.searchTxt{
+    width: 100%;
+    padding-right: 110px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+.searchTxt input{
+    width: 100%;
+    height: 30px;
+    border-radius: 50px;
+    outline:none;
+    border: 1px solid #ccc;
+    background-color: #F5F5F5;
+    padding-left: 15px;
+}
+.searchBtn{
+    width: 60px;
+    height: 30px;
+    background-color: #FF841D;
+    margin-top: -32px;
+    margin-right: 15px;
+    border-radius: 50px;
+    outline:none;
+    border: none;
+    color: #fff;
+}
+/*主体*/
+.main{
+    width: 100%;
+}
+.main .nav{
+    height: 40px;
+}
+.navH{
+    height: 40px;
+    background-color: #F5F5F5;
+    border-bottom: 2px solid #DDDDDD;
+
+}
+.navH h5{
+    width: 100%;
+    padding-left: 20px;
+    line-height: 40px;
+    box-sizing: border-box;
+    padding-right: 50px;
+    position: relative;
+    z-index: 1;
+}
+.navH span{
+    padding-right: 20px;
+    width: 20px;
+    height: 20px;
+    background: url("../images/xiabiao.svg") no-repeat;
+    background-size:20px 20px;
+    margin-top: -30px;
+}
+.hide{
+    display: none;
+}
+.navC{
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+}
+.navC li{
+    width: 33.3%;
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    float: left;
+    box-sizing: border-box;
+    line-height: 30px;
+}
+.navC li:nth-of-type(-n+3){
+    border-top: 1px solid #ccc;
+}
+.navC li:nth-of-type(3n){
+    border-right: 0;
+}
+
+
+/*底部*/
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    text-align: center;
+    /*position: fixed;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
+}
+.footerH{
+    padding-top: 10px;
+}
+.footerH li{
+    width: 33.3%;
+    height: 25px;
+    border:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    float: left;
+    border-right: 0;
+    box-sizing: border-box;
+}
+.footerH li:nth-of-type(1){
+    border-left: 0;
+}
+.footer p:nth-of-type(1){
+    margin-top: 30px;
+}
+.footer p a:nth-of-type(1){
+    color: red;
+}

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/inlanddiscount.css">
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/inlanddiscount.js"></script>
+
+</head>
+<body>
+<div class="layout clearfix">
+    <!--头部-->
+    <div class="header ">
+        <div class="logo fl">
+            <a href="#"></a>
+        </div>
+        <div class="download fr">
+            <a href="#"></a>
+        </div>
+    </div>
+    <!--产品-->
+    <div class="product clearfix">
+        <!--<ul class="productInfo clearfix">-->
+        <!--<li calss="productContent">-->
+        <!--<a href="#">-->
+        <!--<div class=productContentPic>-->
+        <!--<img src="images/0000000000-000000000123129054_1_200x200.jpg" alt="">-->
+        <!--</div>-->
+        <!--<h4 class="productContentTxt">Apple iPhone 6 64GB 金色 移动联通电信4G手机</h4>-->
+        <!--<p class="productContentMoney">4088.00</p>-->
+        <!--<span class="productContentDate">苏宁易购 | 10-22 13:29</span>-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--<li calss="productContent">-->
+        <!--<a href="#">-->
+        <!--<div class=productContentPic>-->
+        <!--<img src="images/0000000000-000000000123129054_1_200x200.jpg" alt="">-->
+        <!--</div>-->
+        <!--<h4 class="productContentTxt">Apple iPhone 6 64GB 金色 移动联通电信4G手机</h4>-->
+        <!--<p class="productContentMoney">4088.00</p>-->
+        <!--<span class="productContentDate">苏宁易购 | 10-22 13:29</span>-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--<li calss="productContent">-->
+        <!--<a href="#">-->
+        <!--<div class=productContentPic>-->
+        <!--<img src="images/0000000000-000000000123129054_1_200x200.jpg" alt="">-->
+        <!--</div>-->
+        <!--<h4 class="productContentTxt">Apple iPhone 6 64GB 金色 移动联通电信4G手机</h4>-->
+        <!--<p class="productContentMoney">4088.00</p>-->
+        <!--<span class="productContentDate">苏宁易购 | 10-22 13:29</span>-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--<li calss="productContent">-->
+        <!--<a href="#">-->
+        <!--<div class=productContentPic>-->
+        <!--<img src="images/0000000000-000000000123129054_1_200x200.jpg" alt="">-->
+        <!--</div>-->
+        <!--<h4 class="productContentTxt">Apple iPhone 6 64GB 金色 移动联通电信4G手机</h4>-->
+        <!--<p class="productContentMoney">4088.00</p>-->
+        <!--<span class="productContentDate">苏宁易购 | 10-22 13:29</span>-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--</ul>-->
+    </div>
+    <!--底部-->
+    <div class="footer ">
+        <ul class="footerH">
+            <li>
+                <a href="#">登录</a>
+            </li>
+            <li>
+                <a href="#">注册</a>
+            </li>
+            <li>
+                <a href="#">返回顶部</a>
+            </li>
+        </ul>
+        <p>
+            <a href="">手机APP下载</a> <a href="">慢慢买手机版</a> -- 掌上比价平台
+        </p>
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</div>
+</body>
+<script type="text/html" id="productContent">
+    <ul class="productInfo ">
+        {{each result as value}}
+        <li calss="productContent">
+            <a href="#">
+                <div class=productContentPic>
+                    {{#value.productImg}}
+                </div>
+                <h4 class="productContentTxt">{{value.productName}}</h4>
+                <p class="productContentMoney">{{value.productPrice}}</p>
+                <span class="productContentDate">{{value.productFrom}} | {{value.productTime}}</span>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+</html>

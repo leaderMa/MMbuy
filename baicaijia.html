@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/baicaijia.css">
+    <!--<link rel="stylesheet" href="css/swiper.min.css">-->
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/baicaijia.js"></script>
+
+</head>
+<body>
+<div class="layout clearfix">
+    <!--头部-->
+    <div class="header ">
+        <h3>白菜价-淘宝内部券</h3>
+        <div class="download">
+            <a href="#"></a>
+        </div>
+    </div>
+    <!--导航-->
+    <div class="nav clearfix">
+        <div id="topNav" class="swiper-container clearfix">
+        </div>
+        <div class="icon"></div>
+    </div>
+    <!--产品-->
+    <div class="product clearfix">
+        <ul class="productInfo">
+            <!--<li>-->
+                <!--<a class="productInfoL fl">-->
+                    <!--<img src="images/TB2H6XhamiJ.eBjSspiXXbqAFXa_!!2551982558.jpg_400x400.jpg" alt="">-->
+                <!--</a>-->
+                <!--<div class="productInfoR">-->
+                    <!--<h3 class="productInfoRH">-->
+                        <!--<span class="b">[包邮]</span>-->
+                        <!--双十一红包 今日开启</h3>-->
+                    <!--<div class="productInfoRMoery">-->
+                        <!--<em>¥</em>0.0-->
+                        <!--<del>¥0</del>-->
+                    <!--</div>-->
+                    <!--<div class="productInfoRCoupon">-->
+                        <!--<div>-->
+                            <!--<span></span>-->
+                            <!--<span>20%</span>-->
+                        <!--</div>-->
+                        <!--<span>已领82张</span>-->
+                    <!--</div>-->
+                    <!--<div class="productInfoRFoot ">-->
+                        <!--<a href="#" class="fl">点此领15元优惠券</a>-->
+                        <!--<a href="#" class="fr">下单链接</a>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+            <!--</li>           -->
+        </ul>
+    </div>
+    <!--底部-->
+    <div class="footer ">
+        <ul class="footerH">
+            <li>
+                <a href="#">登录</a>
+            </li>
+            <li>
+                <a href="#">注册</a>
+            </li>
+            <li>
+                <a href="#">返回顶部</a>
+            </li>
+        </ul>
+        <p>
+            <a href="">手机APP下载</a> <a href="">慢慢买手机版</a> -- 掌上比价平台
+        </p>
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</div>
+</body>
+<script type="text/html" id="navContent">
+    <div class="swiper-wrapper">
+        {{each result as value}}
+            <div class="swiper-slide "><span titleId="{{value.titleId}}">{{value.title}}</span></div>
+        {{/each}}
+    </div>
+</script>
+<script type="text/html" id="productInfoC">
+    {{each result as value}}
+    <li>
+        <a class="productInfoL fl" >
+            {{#value.productImg}}
+        </a>
+        <div class="productInfoR">
+            <h3 class="productInfoRH">{{#value.productName}}</h3>
+            <div class="productInfoRMoery">
+                {{#value.productPrice}}
+            </div>
+            <div class="productInfoRCoupon">
+                {{#value.productCouponRemain}}
+            </div>
+            <div class="productInfoRFoot ">
+                {{#value.productCoupon}}
+                {{#value.productHref}}
+            </div>
+
+        </div>
+    </li>
+    {{/each}}
+</script>
+</html>

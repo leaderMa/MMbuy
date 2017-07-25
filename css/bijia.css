@@ -1,0 +1,274 @@
+/*全局*/
+.layout {
+    width: 100%;
+    margin: 0 auto;
+    min-width: 320px;
+    /*background-color: pink;*/
+    /*height: 1000px;*/
+}
+
+/*头部*/
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: #FF841D;
+    /*padding: 10px;*/
+}
+
+.logo {
+    width: 180px;
+    height: 30px;
+    background: url("../images/header_logo.png") no-repeat;
+    background-size: 180px 30px;
+    margin: 10px 0 0 10px;
+}
+
+.download {
+    width: 35px;
+    height: 35px;
+    background: url("../images/header_app.png") no-repeat;
+    background-size: 35px 35px;
+    margin: 10px 10px 0 0;
+}
+
+/*搜索*/
+.search {
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+    background-color: #fff;
+}
+
+.searchTxt {
+    width: 100%;
+    padding-right: 110px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.searchTxt input {
+    width: 100%;
+    height: 30px;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: #F5F5F5;
+    padding-left: 15px;
+}
+
+.searchBtn {
+    width: 60px;
+    height: 30px;
+    background-color: #FF841D;
+    margin-top: -32px;
+    margin-right: 15px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+
+/*主体*/
+#main {
+    width: 100%;
+    background-color: #fff;
+    /*height: 1000px;*/
+}
+
+.nav {
+    width: 100%;
+    height: 40px;
+    background-color: #F5F5F5;
+}
+
+.navLeft {
+    padding-left: 20px;
+}
+
+.navLeft li {
+    float: left;
+    line-height: 40px;
+    padding-right: 10px;
+}
+
+.nav .sx {
+    width: 50px;
+    height: 28px;
+    border: 1px solid #ccc;
+    display: block;
+    float: right;
+    margin-top: 5px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 28px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/*产品*/
+.product {
+    width: 100%;
+}
+
+.productHeader {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.productHeader h1 {
+    font: 700 16px/20px 微软雅黑;
+    padding: 0 20px;
+}
+
+.productHeader .pic img {
+    width: 170px;
+    height: 170px;
+}
+
+.productHeader .Collection a img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+}
+
+.middleHeader {
+    /*background-color: yellowgreen;*/
+}
+
+.middleHeader li {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+.middleMiddle li {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+
+.middleMiddleL span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: red;
+}
+
+.middleMiddleL a {
+    margin-left: 10px;
+}
+
+.middleMiddleR {
+    position: relative;
+}
+
+.middleMiddleR a {
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background-color: #FF5500;
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+
+.productMiddle .note {
+    padding: 0 20px;
+    margin: 5px 0;
+}
+
+.productComment {
+    width: 100%;
+    height: 40px;
+    border-top: 2px solid #7A7A7A;
+    background-color: #DBDBDB;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.productFoot {
+    width: 100%;
+}
+
+.productFootComment {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.productFootComment div {
+    margin-bottom: 5px;
+}
+
+.productFootCommentT span:nth-of-type(1) {
+    margin-left: 10px;
+    color: #666;
+}
+
+.productFootCommentT span:nth-last-of-type(1), .productFootCommentM span {
+    margin-right: 10px;
+    color: #666;
+}
+
+.productFootCommentB {
+    padding: 0 10px;
+}
+
+.more {
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.more a {
+    width: 100%;
+    height: 26px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+}
+
+/*底部*/
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.footerH {
+    padding-top: 10px;
+}
+
+.footerH li {
+    width: 33.3%;
+    height: 25px;
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    float: left;
+    border-right: 0;
+    box-sizing: border-box;
+}
+
+.footerH li:nth-of-type(1) {
+    border-left: 0;
+}
+
+.footer p:nth-of-type(1) {
+    margin-top: 30px;
+}
+
+.footer p a:nth-of-type(1) {
+    color: red;
+}

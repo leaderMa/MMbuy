@@ -1,0 +1,132 @@
+.layout {
+  width: 100%;
+  min-width: 320px;
+}
+
+//头部
+.header {
+  //width: 100%;
+  height: 50/32rem;
+  background-color: #FF841D;
+  box-sizing: border-box;
+  position: relative;
+  > a:first-of-type {
+    font-size: 35/32rem;
+    color: #fff;
+    font-family: 微软雅黑;
+    position: absolute;
+    top: 0;
+    left: 10px;
+  }
+  > h2 {
+    width: 100%;
+    font-size: 20/32rem;
+    line-height: 50/32rem;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+  }
+  > a:last-of-type {
+    width: 35/32rem;
+    height: 35/32rem;
+    background: url("../images/header_app.png") no-repeat;
+    background-size: 35/32rem 35/32rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+//主体部分
+.main {
+  //width: 100%;
+  margin-top: 5/32rem;
+  > .mainHeader {
+    width: 100%;
+    height: 18/32rem;
+    font-size: 14/32rem;
+    line-height: 18/32rem;
+    text-align: center;
+    color: lightgray;
+  }
+  > .product {
+    > .productInfo {
+      position: relative;
+      > li {
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 5/32rem;
+        .productInfoT {
+          padding: 10/32rem;
+          > .productInfoTL {
+            > img {
+              width: 100/32rem;
+              height: 100/32rem;
+            }
+          }
+          > .productInfoTR {
+            padding-left: 110/32rem;
+            position: relative;
+            >h3{
+              font-size:14/32rem;
+              font-weight: 700;
+              font-family: 宋体;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 3;
+              -webkit-box-orient: vertical;
+              margin-top: 5/32rem;
+            }
+            >span{
+              display: block;
+              position: absolute;
+              top:60/32rem;
+              font-size: 16/32rem;
+              color: red;
+            }
+            .productInfoB{
+              position: absolute;
+              top:80/32rem;
+              right: 10/32rem;
+              color:#FF841D;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 10/32rem;
+  //position: absolute;
+  //left: 0;
+  //bottom: 0;
+  > ul {
+    width: 100%;
+    > li {
+
+      width: 33.3%;
+      height: 20/32rem;
+      font-size: 14/32rem;
+      line-height: 20/32rem;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      border-left: 0;
+      float: left;
+    }
+    > li:last-of-type {
+      border-right: 0;
+    }
+  }
+  > p:first-of-type {
+    margin-top: 5px;
+    font-size: 12/32rem;
+    > a:first-of-type {
+      color: #FF841D;
+    }
+  }
+}

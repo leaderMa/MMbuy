@@ -1,0 +1,187 @@
+.layout {
+  width: 100%;
+  min-width: 320px;
+}
+
+//头部
+.header {
+  width: 100%;
+  height: 50/32rem;
+  background-color: #FF841D;
+  box-sizing: border-box;
+  position: relative;
+  > a:first-of-type {
+    font-size: 35/32rem;
+    color: #fff;
+    font-family: 微软雅黑;
+    position: absolute;
+    top: 0;
+    left: 10px;
+  }
+  > h2 {
+    height: 50/32rem;
+    font-size: 20/32rem;
+    line-height: 50/32rem;
+    text-align: center;
+    color: #fff
+  }
+  > a:last-of-type {
+    width: 35/32rem;
+    height: 35/32rem;
+    background: url("../images/header_app.png") no-repeat;
+    background-size: 35/32rem 35/32rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+//主体部分
+.main {
+  width: 100%;
+  //导航区
+  > .nav {
+    > .navHeader {
+      padding-right: 30/32rem;
+      height: 30/32rem;
+      background-color: #eee;
+      border-bottom: 2px solid #ccc;
+      border-top: 2px solid #ccc;
+      position: relative;
+      > ul {
+        width: 100%;
+        > li {
+          //width: 33.3%;
+          height: 30/32rem;
+          font-size: 12/32rem;
+          float: left;
+          > select {
+            width: 100%;
+            height: 30/32rem;
+            background-color: #eee;
+            //padding-left: 10px;
+            border: 0;
+            border-right: 2px solid #ccc;
+            outline: medium none;
+            >option{
+              outline: medium none;
+            }
+          }
+        }
+        > li:first-of-type {
+          width: 25%;
+        }
+        > li:nth-of-type(2) {
+          width: 50%;
+        }
+        > li:last-of-type {
+          width: 25%;
+        }
+      }
+      > .icon {
+        width: 30/32rem;
+        height: 30/32rem;
+        padding: 10/32rem 10/32rem;
+        background: url("../images/seach.svg") no-repeat center;
+        background-size: 25/32rem 25/32rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        box-sizing: border-box;
+
+      }
+    }
+  }
+  //产品区
+  .product {
+    width: 100%;
+    > .productInfo {
+      padding: 5/32rem;
+      > li {
+        width: 49%;
+        height: 220/32rem;
+        border: 1px solid #ccc;
+        padding: 5/32rem;
+        box-sizing: border-box;
+        margin-bottom: 5/32rem;
+        float: left;
+        position: relative;
+        > .productInfoH {
+          text-align: center;
+          > img {
+            width: 140/32rem;
+            height: 140/32rem;
+          }
+        }
+        .productInfoM {
+          font-size: 14/32rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+        .productInfoB {
+          width: 100%;
+          position: absolute;
+          top:  195/32rem;
+          //margin-top: 10/32rem;
+          > span {
+            color: red;
+            // margin-top: 10px;
+            position: absolute;
+            top:0;
+            left: 0;
+          }
+          > a {
+            color: #fff;
+            width: 50/32rem;
+            height: 20/32rem;
+            border-radius: 5px;
+            background-color: #FF841D;
+            text-align: center;
+            line-height: 20/32rem;
+            position: absolute;
+            top: 0;
+            right: 10/32rem;
+          }
+        }
+      }
+      li:nth-of-type(2n){
+        margin-left: 2%;
+      }
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  //position: fixed;
+  //left: 0;
+  //bottom: 0;
+  > ul {
+    width: 100%;
+    > li {
+
+      width: 33.3%;
+      height: 20/32rem;
+      font-size: 14/32rem;
+      line-height: 20/32rem;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      border-left: 0;
+      float: left;
+    }
+    > li:last-of-type {
+      border-right: 0;
+    }
+  }
+  > p:first-of-type {
+    margin-top: 5px;
+    font-size: 12/32rem;
+    > a:first-of-type {
+      color: #FF841D;
+    }
+  }
+}

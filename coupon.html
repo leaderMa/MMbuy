@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/coupon.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+    <div class="layout clearfix">
+        <!--头部-->
+        <div class="header">
+            <a href="index.html" class=""><</a>
+            <h2>优惠券</h2>
+            <a href="#" class=""></a>
+        </div>
+        <!--主体-->
+        <div class="main clearfix">
+            <div class="product">
+                <ul class="productInfo clearfix">
+                    <li>
+                        <a href="">
+                            <img src="images/kfc.jpg" alt="">
+                            <p>肯德基</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/kfc.jpg" alt="">
+                            <p>肯德基</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!--底部-->
+        <div class="footer">
+            <ul class="clearfix">
+                <li>登录</li>
+                <li>注册</li>
+                <li>返回顶部</li>
+            </ul>
+            <p><a href="#">手机APP下载 </a>慢慢买手机版—掌上比价平台</p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</body>
+<script src="lib/jquery/jquery.js"></script>
+<script src="js/flexible.js"></script>
+<script src="js/template.js"></script>
+<script src="js/coupon.js"></script>
+<script type="text/html" id="productInfoC">
+    {{each result as value}}
+    <li>
+        <a href="{{value.couponLink}}?couponid={{value.couponId}}&couponTitle={{value.couponTitle}}" index="{{value.couponId}}">
+            <img src="{{value.couponImg}}" alt="">
+            <p>{{value.couponTitle}}</p>
+        </a>
+    </li>
+    {{/each}}
+</script>
+</html>

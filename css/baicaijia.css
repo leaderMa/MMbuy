@@ -1,0 +1,258 @@
+.layout {
+    width: 100%;
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: #ccc;
+}
+
+/*头部*/
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: #FF841D;
+    text-align: center;
+    position: relative;
+}
+
+.header h3 {
+    font: 700 20px/50px 微软雅黑;
+    color: #fff;
+}
+
+.download {
+    width: 35px;
+    height: 35px;
+    background: url("../images/header_app.png") no-repeat;
+    background-size: 35px 35px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+/*导航区*/
+.nav {
+    width: 100%;
+    position: relative;
+}
+
+#topNav {
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.swiper-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.swiper-wrapper {
+    width: 1000px;
+    border-bottom: 0;
+    height: 42px;
+}
+
+.swiper-wrapper div {
+    float: left;
+    padding: 0 10px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    padding: 10px 20px;
+    background: url("../images/seach.svg") no-repeat center;
+    background-size: 25px 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.active {
+    border-bottom: 2px solid red;
+    color: red;
+}
+
+/*产品区*/
+.product {
+    width: 100%;
+    background-color: #fff;
+    padding-top: 2px;
+}
+
+.productInfo li {
+    padding: 10px 5px 10px;
+    border-top: 3px solid #ccc;
+    height: 130px;
+}
+
+.productInfoL {
+    width: 130px;
+    height: 130px;
+}
+
+.productInfoL img {
+    width: 130px;
+    height: 130px;
+}
+
+.productInfoR {
+    padding-left: 135px;
+    position: relative;
+}
+
+.productInfoRH {
+    font: 14px 微软雅黑;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.productInfoRH span {
+    font-weight: 700;
+}
+
+.productInfoRMoery {
+    font-size: 25px;
+    color: red;
+    position: absolute;
+    top: 35px;
+}
+
+.productInfoRMoery em {;
+    color: red;
+}
+
+.productInfoRMoery del {
+    color: #ccc;
+}
+
+.productInfoRCoupon {
+    position: absolute;
+    top: 75px;
+}
+
+.productInfoRCoupon .bar {
+    width: 88px;
+    height: 18px;
+    background-color: #ff8487;
+    border-radius: 10px;
+    border: 1px solid red;
+    position: relative;
+}
+.bar i em{
+    display: block;
+    height: 18px;
+
+    background-color: red;
+    border-radius: 10px;
+}
+.bar i span{
+    line-height: 18px;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    color: #fff;
+    font-size: 12px;
+    transform: translateX(-50%);
+}
+.bar b{
+    width: 75px;
+    height: 20px;
+    position: absolute;
+    left: 100px;
+    top: 0;
+    color: #fc353a;
+}
+/*.productInfoRCoupon div span:nth-of-type(1) {*/
+    /*display: block;*/
+    /*height: 18px;*/
+    /*width: 20%;*/
+    /*background-color: red;*/
+/*}*/
+
+/*.productInfoRCoupon div span:nth-of-type(2) {*/
+    /*line-height: 18px;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 50px;*/
+    /*color: #fff;*/
+    /*font-size: 12px;*/
+    /*transform: translateX(-50%);*/
+/*}*/
+
+/*.productInfoRCoupon > b {*/
+    /*width: 100px;*/
+    /*position: absolute;*/
+    /*left: 100px;*/
+    /*top: 0;*/
+    /*color: #fc353a;*/
+/*}*/
+
+.productInfoRFoot {
+    /*width: 100%;    */
+    position: absolute;
+    top:105px;
+    box-sizing: border-box;
+}
+
+.productInfoRFoot a:nth-of-type(1) {
+    border: 1px dashed #e4393c;
+    color: #e4393c;
+    padding: 0 5px;
+    font-size: 12px;
+    float: left;
+}
+
+.productInfoRFoot a:nth-last-child(1) {
+    line-height: 25px;
+    background-color: #ff5e5d;
+    font-size: 12px;
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 5px;
+    margin-top: -5px;
+    margin-left: 5px;
+    float: right;
+}
+
+/*底部*/
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.footerH {
+    padding-top: 10px;
+}
+
+.footerH li {
+    width: 33.3%;
+    height: 25px;
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    float: left;
+    border-right: 0;
+    box-sizing: border-box;
+}
+
+.footerH li:nth-of-type(1) {
+    border-left: 0;
+}
+
+.footer p:nth-of-type(1) {
+    margin-top: 30px;
+}
+
+.footer p a:nth-of-type(1) {
+    color: red;
+}

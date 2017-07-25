@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/couponproduct.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="layout clearfix">
+    <!--头部-->
+    <div class="header">
+        <a href="coupon.html" class=""><</a>
+        <h2>优惠券</h2>
+        <a href="#" class=""></a>
+    </div>
+    <!--主体-->
+    <div class="main clearfix">
+        <div class="mainHeader">--点餐前出示手机中的优惠券，即可享受优惠--</div>
+        <div class="product">
+            <ul class="productInfo">
+                <!--<li class="clearfix">-->
+                    <!--<div class="productInfoT">-->
+                        <!--<div class="productInfoTL fl">-->
+                            <!--<img src="images/kfc-5ikfc-108_pc27.jpg" alt="">-->
+                        <!--</div>-->
+                        <!--<div class="productInfoTR">-->
+                            <!--<h3>C27 两人小食组 新奥尔良烤翅2块+薯条(中)+黄金鸡块5块+劲爆鸡米花(小) 2016年10月凭肯德基优惠券</h3>-->
+                            <!--<span>￥ 28 元</span>-->
+                            <!--<p class="productInfoB">有效期至10月31日</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+    <!--底部-->
+    <div class="footer">
+        <ul class="clearfix">
+            <li>登录</li>
+            <li>注册</li>
+            <li>返回顶部</li>
+        </ul>
+        <p><a href="#">手机APP下载 </a>慢慢买手机版—掌上比价平台</p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</div>
+</body>
+<script src="lib/jquery/jquery.js"></script>
+<script src="js/flexible.js"></script>
+<script src="js/template.js"></script>
+<script src="js/couponproduct.js"></script>
+<script type="text/html" id="productInfoC">
+    {{each result as value}}
+    <li class="clearfix">
+        <div class="productInfoT">
+            <div class="productInfoTL fl">
+                {{#value.couponProductImg}}
+            </div>
+            <div class="productInfoTR">
+                <h3>{{value.couponProductName}}</h3>
+                <span>{{value.couponProductPrice}}</span>
+                <p class="productInfoB">{{value.couponProductTime}}</p>
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</script>
+</html>
