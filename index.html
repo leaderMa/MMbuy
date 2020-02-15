@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 
     <title>慢慢买</title>
     <link rel="stylesheet" href="css/base.css">
@@ -11,90 +11,88 @@
     <script src="lib/jquery/jquery.js"></script>
     <script src="js/template.js"></script>
     <script src="js/index.js"></script>
-
 </head>
 <body>
-<div class="layout clearfix">
-    <!--头部-->
-    <div class="header ">
-        <div class="logo fl">
-            <a href="#"></a>
+    <div class="layout clearfix">
+        <!--头部-->
+        <div class="header ">
+            <div class="logo fl">
+                <a href="#"></a>
+            </div>
+            <div class="download fr">
+                <a href="#"></a>
+            </div>
         </div>
-        <div class="download fr">
-            <a href="#"></a>
+        <!--搜索-->
+        <div class="search">
+            <div class="searchTxt fl">
+                <input type="text" placeholder="请输入商品">
+            </div>
+            <input type="button" class="searchBtn fr" value="搜索">
         </div>
-    </div>
-    <!--搜索-->
-    <div class="search">
-        <div class="searchTxt fl">
-            <input type="text" placeholder="请输入商品">
-        </div>
-        <input type="button" class="searchBtn fr" value="搜索">
-    </div>
-    <!--主体-->
-    <div class="main clearfix">
-
-        <div class="content clearfix">
-            <!--<ul >-->
-            <!--<li>-->
-            <!--<a href="" class="contentA">-->
-            <!--<img src="images/ic_search.png" alt="">-->
-            <!--<p>1212121</p>-->
-            <!--</a>-->
-
-            <!--<li/>-->
-
-            <!--</ul>-->
-
-        </div>
-        <div class="mainHeader">
-            <h5 class="fl">超值折扣推荐</h5>
-            <a href="#" class="fr"></a>
-        </div>
-        <div class="commodity ">
-            <!--<ul>-->
+        <!--主体-->
+        <div class="main clearfix">
+            <div class="content clearfix">
+                <!--<ul >-->
                 <!--<li>-->
-                    <!--<div class="commodityLeft fl"><img src="images/201610001412282758.jpg" alt=""></div>-->
-                    <!--<div class="commodityRight ">-->
-                        <!--<h5>移动端凑单品：海天 鲜味 生抽 1.28L</h5>-->
-                        <!--<p>10.9元</p>-->
-                        <!--<span class="spanl fl">京东商城 | 10-25 14:10</span>-->
-            <!--<span class="spanr fr">-->
-            <!--<span></span>1-->
-            <!--</span>-->
-                    <!--</div>-->
+                <!--<a href="" class="contentA">-->
+                <!--<img src="images/ic_search.png" alt="">-->
+                <!--<p>1212121</p>-->
+                <!--</a>-->
+
+                <!--<li/>-->
+
+                <!--</ul>-->
+
+            </div>
+            <div class="mainHeader">
+                <h5 class="fl">超值折扣推荐</h5>
+                <a href="#" class="fr"></a>
+            </div>
+            <div class="commodity ">
+                <!-- <ul>-->
+                <!--<li>-->
+                <!--<div class="commodityLeft fl"><img src="images/201610001412282758.jpg" alt=""></div>-->
+                <!--<div class="commodityRight ">-->
+                <!--<h5>移动端凑单品：海天 鲜味 生抽 1.28L</h5>-->
+                <!--<p>10.9元</p>-->
+                <!--<span class="spanl fl">京东商城 | 10-25 14:10</span>-->
+                <!--<span class="spanr fr">-->
+                <!--<span></span>1-->
+                <!--</span>-->
+                <!--</div>-->
                 <!--</li>                -->
-            <!--</ul>-->
+                <!--</ul> -->
+            </div>
+            <div class="information">
+                <a href="moneyctrl.html">更多优惠信息>></a>
+            </div>
+            <div class="mainHeader">
+                <h5 class="fl">品牌排行榜</h5>
+                <a href="#" class="fr"></a>
+            </div>
         </div>
-        <div class="information">
-            <a href="moneyctrl.html">更多优惠信息>></a>
-        </div>
-        <div class="mainHeader">
-            <h5 class="fl">品牌排行榜</h5>
-            <a href="#" class="fr"></a>
+        <!--底部-->
+        <div class="footer ">
+            <ul class="footerH">
+                <li>
+                    <a href="#">登录</a>
+                </li>
+                <li>
+                    <a href="#">注册</a>
+                </li>
+                <li>
+                    <a href="#">返回顶部</a>
+                </li>
+            </ul>
+            <p>
+                <a href="">手机APP下载</a> <a href="">慢慢买手机版</a> -- 掌上比价平台
+            </p>
+            <p>
+                m.manmanbuy.com
+            </p>
         </div>
     </div>
-    <!--底部-->
-    <div class="footer ">
-        <ul class="footerH">
-            <li>
-                <a href="#">登录</a>
-            </li>
-            <li>
-                <a href="#">注册</a>
-            </li>
-            <li>
-                <a href="#">返回顶部</a>
-            </li>
-        </ul>
-        <p>
-            <a href="">手机APP下载</a> <a href="">慢慢买手机版</a> -- 掌上比价平台
-        </p>
-        <p>
-            m.manmanbuy.com
-        </p>
-    </div>
-</div>
 </body>
 <script type="text/html" id="content">
     <ul>
@@ -119,13 +117,14 @@
                 <h5>{{value.productName}}</h5>
                 <p>{{value.productPinkage}}</p>
                 <span class="spanl fl">{{value.productFrom}}|{{value.productTime}}</span>
-                        <span class="spanr fr">
-                            <span></span>
-                            {{value.productComCount.replace("有","").replace('人评论',"")}}
-                        </span>
+                <span class="spanr fr">
+                    <span></span>
+                    {{value.productComCount.replace("有","").replace('人评论',"")}}
+                </span>
             </div>
         </li>
         {{/each}}
     </ul>
 </script>
+
 </html>
